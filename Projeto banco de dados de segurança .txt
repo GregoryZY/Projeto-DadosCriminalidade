@@ -1,0 +1,27 @@
+﻿SITE DE MONITORAMENTO DE CRIMES
+31/03/2026
+─
+Gregory zambianco yamamoto
+Pedro Fernando Tasso 
+
+
+Visão geral
+O projeto será um site para armazenamento de dados de crimes que ocorrem em campinas e região 
+INTERFACE 
+Será de aparência simples, sem muita variação de cor. A idéia, inicialmente, será implementar a coloração em escala de cinza para plano de fundo e tons vermelho, azul e/ou violeta para destaque de objetos e contornos.
+
+
+Os objetos presentes na interface serão:
+- campos para pesquisa/filtragem por endereço compostos subcampos "tipo de logradouro", "logradouro", "número do logradouro", "bairro", e "cidade do Estado de São Paulo".
+- botão "limpar" para limpar o filtro.
+- botão "filtrar" para aplicar filtragem por endereço.
+- um campo (output) com uma listagem dos crimes que ocorreram na região filtrada (esses dados constarem como "natureza do crime", "quantidade", e hora
+
+
+CAMPO DA BASE DE DADOS 
+https://www.ssp.sp.gov.br/estatistica/consultas
+Que vem como arquivo ".xlsx" dividido em duas planilhas semestrais contendo os campos:
+ NOME_DEPARTAMENTO, NOME_SECCIONAL, NOME_DELEGACIA, NOME_MUNICIPO, NUM_BO, ANO_BO, DATA_REGISTRO, DATA_OCORRENCIA_BO, HORA_OCORRENCIA_BO, DESC_PERIODO, DESCR_TIPOLOCAL, DESCR_SUBTIPOLOCAL, BAIRRO, LOGRADOURO, NUMERO_LOGRADOURO, LATITUDE, LONGITUDE, NOME_DELEGACIA, NOME_DEPARTAMENTO_CIRCUSCRICAO, NOME_SECCIONAL_CIRCUNSCRICAO, NOME_MUNICIPIO_CIRCUNSCRICAO, RUBRICA, DESCR_CONDUTA, NATUREZA_APURADA, MES_ESTATISTICA, ANO_ESTATISTICA, CMD, BTL, CIA e codigo IBGE
+
+
+Para a base, consideramos relevante a inserção de apenas os dados referentes a endereço, crime, natureza do crime e horário em que ocorreu crime.
